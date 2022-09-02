@@ -13,5 +13,17 @@ public class Main {
         al.add(new Student(103,"Park",25));
 
         //Traverse elements of arraylist(method #1)
+        for( Student s : al){
+            System.out.println(s.toString());
+        }
+
+        //Remove an object from arraylist
+        al.remove(s2);
+        System.out.println("One student removed!");
+
+        //Traverse elements of arraylist(method #2)
+        for(int i = 0; i<al.size(); i++){
+            System.out.println(al.get(i).toString());
+        }
     }
 }
